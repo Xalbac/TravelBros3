@@ -1,0 +1,45 @@
+
+/* Class = "UITextField"; placeholder = "Idag tog jag min pappa och vi hardbassade hela dagen"; ObjectID = "2ib-h3-ij9"; */
+"2ib-h3-ij9.placeholder" = "Idag tog jag min pappa och vi hardbassade hela dagen";
+
+/* Class = "UIButton"; normalTitle = "ADD"; ObjectID = "3Tb-J3-exy"; */
+"3Tb-J3-exy.normalTitle" = "ADD";
+
+/* Class = "UILabel"; text = "ABOUT DAY"; ObjectID = "47b-m9-RnV"; */
+"47b-m9-RnV.text" = "ABOUT DAY";
+
+/* Class = "UILabel"; text = "ADDRESS"; ObjectID = "7cf-Ut-QN1"; */
+"7cf-Ut-QN1.text" = "ADDRESS";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ERK-5l-53I"; */
+"ERK-5l-53I.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "DD/MM"; ObjectID = "FFc-Jf-qkn"; */
+"FFc-Jf-qkn.placeholder" = "DD/MM";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "ILQ-8O-LeQ"; */
+"ILQ-8O-LeQ.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Map"; ObjectID = "KNz-qm-gpz"; */
+"KNz-qm-gpz.normalTitle" = "Map";
+
+/* Class = "UIButton"; normalTitle = "Gallery"; ObjectID = "MWg-ps-RMd"; */
+"MWg-ps-RMd.normalTitle" = "Gallery";
+
+/* Class = "UIBarButtonItem"; title = "New entry"; ObjectID = "XIE-ZU-H3U"; */
+"XIE-ZU-H3U.title" = "New entry";
+
+/* Class = "UITextField"; placeholder = "Drożyska 47"; ObjectID = "YrQ-zc-heV"; */
+"YrQ-zc-heV.placeholder" = "Drożyska 47";
+
+/* Class = "UILabel"; text = "DATE"; ObjectID = "bEW-8y-MYk"; */
+"bEW-8y-MYk.text" = "DATE";
+
+/* Class = "UILabel"; text = "DATE"; ObjectID = "dO1-Kc-ULM"; */
+"dO1-Kc-ULM.text" = "DATE";
+
+/* Class = "UIButton"; normalTitle = "Camera"; ObjectID = "jZp-Il-2uF"; */
+"jZp-Il-2uF.normalTitle" = "Camera";
+
+/* Class = "UILabel"; text = "ADRESSS"; ObjectID = "r9f-zV-2dA"; */
+"r9f-zV-2dA.text" = "ADRESSS";
