@@ -43,6 +43,29 @@ class EntryPage: UIViewController {
         entryImage.image = entryData.oneEntry.img
     }
     
+    //File sharing image (non-facebook)
+    @IBAction func exportImage() {
+        
+        let fileName = "image.jpg"
+        
+        let tempURL = NSURL(fileURLWithPath: NSTemporaryDirectory())
+        if let fileURL = tempURL.appendingPathComponent(fileName), let theImage = entryImage.image, let jpegData = theImage.jpegData(compressionQuality: 0.7){
+            
+            do {
+                try jpegData.write(to: fileURL)
+                
+                let objectsToShare = [fileURL] as [Any]
+                let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+                self.present(activityVC,animated: true,completion: nil)
+            }
+            catch {
+                //hantera fel
+            }
+        }
+        
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
