@@ -66,6 +66,21 @@ class EntryPage: UIViewController {
         
     }
     
+    //Facebook
+    @IBAction func facebook(){
+//        if let img = entryImage.image{
+//            let photo = Photo(image: img, userGenerated: false)
+//            let content = PhotoShareContent(photos: [photo])
+//            let shareDialog = ShareDialog(content: content)
+//        }
+//
+//        do {
+//            try shareDialog.show()
+//        } catch {
+//            print(error)
+//        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
