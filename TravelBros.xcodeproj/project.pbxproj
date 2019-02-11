@@ -76,7 +76,6 @@
 		42B7A61D215CB82E00A72A63 = {
 			isa = PBXGroup;
 			children = (
-				D0D51EBB2211610400075C0B /* infoPlist.strings */,
 				42B7A628215CB82E00A72A63 /* TravelBros */,
 				42B7A627215CB82E00A72A63 /* Products */,
 			);
@@ -93,6 +92,7 @@
 		42B7A628215CB82E00A72A63 /* TravelBros */ = {
 			isa = PBXGroup;
 			children = (
+				D0D51EBB2211610400075C0B /* infoPlist.strings */,
 				42B7A629215CB82E00A72A63 /* AppDelegate.swift */,
 				42B7A630215CB82F00A72A63 /* Assets.xcassets */,
 				42FEDE1C215CCF73008420BF /* Main.storyboard */,

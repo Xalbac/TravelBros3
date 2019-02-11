@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchControllerDelegate {
     
@@ -33,8 +34,6 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         searchController.searchBar.sizeToFit()
         searchController.dimsBackgroundDuringPresentation = false
         entriesTable.tableHeaderView = searchController.searchBar
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -98,18 +97,15 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     }
     
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        // HAVE TO WRITE AN SQL REMOVE THING TO MAKE IT WORK
         
         if editingStyle == .delete {
-            // Delete the row from the data source
-            
-            // SOMEHOW GET THIS TO LOAD STUFF FROM THE DATABASE
-            entryData.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+            entry.remove(at: indexPath)
+            // THats basicalyl how it has to look lkiek
+            }
         }
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

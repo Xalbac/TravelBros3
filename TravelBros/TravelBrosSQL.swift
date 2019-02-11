@@ -119,6 +119,14 @@ class TravelBrosSQL {
 //            UIGraphicsEndImageContext()
         }
         
+        
+        // WELL this is the delete function, but how do I do it? I mean, it would be way easier to do this in firebase i guess
+        func dlete(){
+            var deleteStatemnt: OpaquePointer? = nil
+            if database.open(){
+                
+            }
+        }
         let database = FMDatabase(path: dbPath)
         if database.open() {
             do {
