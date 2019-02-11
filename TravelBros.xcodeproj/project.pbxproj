@@ -303,6 +303,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -358,6 +359,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -372,6 +374,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q75L2P2899;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/Bolts.framework,
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/Bolts.framework,
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKLoginKit.framework,
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKShareKit.framework,
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKCoreKit.framework,
+				);
 				INFOPLIST_FILE = TravelBros/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -393,6 +402,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q75L2P2899;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/Bolts.framework,
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/Bolts.framework,
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKLoginKit.framework,
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKShareKit.framework,
+					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKCoreKit.framework,
+				);
 				INFOPLIST_FILE = TravelBros/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
