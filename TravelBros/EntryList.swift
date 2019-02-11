@@ -11,7 +11,6 @@ import UIKit
 class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchControllerDelegate {
     
     
-    
     // Connnect to DB
     // LOCAL DATAASE SHOULD BE IN USERS/YOURUSERNAME/travelbrosDB.db
     var entryData = TravelBrosSQL()
@@ -26,6 +25,7 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = editButtonItem
         entryData.loadDB()
         loadActivity.isHidden = true //WHen the view loads, hide this.
         searchController.searchResultsUpdater = self
@@ -38,7 +38,7 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     }
     
     override func viewWillAppear(_ animated: Bool) {
-                entriesTable.reloadData()
+        entriesTable.reloadData()
     }
     
     // Load the table
@@ -97,6 +97,19 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         }
     }
     
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            
+            // SOMEHOW GET THIS TO LOAD STUFF FROM THE DATABASE
+            entryData.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
