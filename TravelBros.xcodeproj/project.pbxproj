@@ -56,8 +56,6 @@
 		42FEDE1D215CCF73008420BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DD69AC5FA01EAE4F3F8FAA1 /* Pods-TravelBros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBros.debug.xcconfig"; path = "Target Support Files/Pods-TravelBros/Pods-TravelBros.debug.xcconfig"; sourceTree = "<group>"; };
 		53E8AFBF11F7851EC8FC5AED /* Pods-TravelBros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBros.release.xcconfig"; path = "Target Support Files/Pods-TravelBros/Pods-TravelBros.release.xcconfig"; sourceTree = "<group>"; };
-		655570126E367F61947DF1B0 /* Pods-TravelBros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBros.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBros/Pods-TravelBros.release.xcconfig"; sourceTree = "<group>"; };
-		67314FBAA21CC44633ACFFD2 /* Pods-TravelBros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBros.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBros/Pods-TravelBros.debug.xcconfig"; sourceTree = "<group>"; };
 		CAFFB1F7C715C2FB8B979FB0 /* Pods_TravelBros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelBros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D008B39E215D1B3A00D13B0E /* EntryNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryNew.swift; sourceTree = "<group>"; };
 		D01D2481221184FE00C920D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -147,8 +145,6 @@
 			children = (
 				4DD69AC5FA01EAE4F3F8FAA1 /* Pods-TravelBros.debug.xcconfig */,
 				53E8AFBF11F7851EC8FC5AED /* Pods-TravelBros.release.xcconfig */,
-				67314FBAA21CC44633ACFFD2 /* Pods-TravelBros.debug.xcconfig */,
-				655570126E367F61947DF1B0 /* Pods-TravelBros.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -164,7 +160,6 @@
 				42B7A622215CB82E00A72A63 /* Sources */,
 				42B7A623215CB82E00A72A63 /* Frameworks */,
 				42B7A624215CB82E00A72A63 /* Resources */,
-				FC2014D8F41211452B1BA6AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,30 +242,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC2014D8F41211452B1BA6AE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TravelBros/Pods-TravelBros-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelBros/Pods-TravelBros-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -452,7 +423,7 @@
 		};
 		42B7A639215CB82F00A72A63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67314FBAA21CC44633ACFFD2 /* Pods-TravelBros.debug.xcconfig */;
+			baseConfigurationReference = 4DD69AC5FA01EAE4F3F8FAA1 /* Pods-TravelBros.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -481,7 +452,7 @@
 		};
 		42B7A63A215CB82F00A72A63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655570126E367F61947DF1B0 /* Pods-TravelBros.release.xcconfig */;
+			baseConfigurationReference = 53E8AFBF11F7851EC8FC5AED /* Pods-TravelBros.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
