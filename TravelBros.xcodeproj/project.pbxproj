@@ -25,6 +25,7 @@
 		D008B39F215D1B3A00D13B0E /* EntryNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008B39E215D1B3A00D13B0E /* EntryNew.swift */; };
 		D0D51EB72211609500075C0B /* LocalisableStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D51EB92211609500075C0B /* LocalisableStrings.strings */; };
 		D0D51EBC2211610400075C0B /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D51EBB2211610400075C0B /* infoPlist.strings */; };
+		D0D51EBE22116F7B00075C0B /* entrylistbackup.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0D51EBD22116F7B00075C0B /* entrylistbackup.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		D0D51EB82211609500075C0B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LocalisableStrings.strings; sourceTree = "<group>"; };
 		D0D51EBA221160A000075C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalisableStrings.strings; sourceTree = "<group>"; };
 		D0D51EBB2211610400075C0B /* infoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = infoPlist.strings; sourceTree = "<group>"; };
+		D0D51EBD22116F7B00075C0B /* entrylistbackup.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = entrylistbackup.txt; sourceTree = "<group>"; };
 		D0D93665221102320083C168 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Main.strings; sourceTree = "<group>"; };
 		D0D93666221102330083C168 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D0D93667221102C50083C168 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -76,7 +78,6 @@
 		42B7A61D215CB82E00A72A63 = {
 			isa = PBXGroup;
 			children = (
-				D0D51EBB2211610400075C0B /* infoPlist.strings */,
 				42B7A628215CB82E00A72A63 /* TravelBros */,
 				42B7A627215CB82E00A72A63 /* Products */,
 			);
@@ -93,10 +94,12 @@
 		42B7A628215CB82E00A72A63 /* TravelBros */ = {
 			isa = PBXGroup;
 			children = (
+				D0D51EBB2211610400075C0B /* infoPlist.strings */,
 				42B7A629215CB82E00A72A63 /* AppDelegate.swift */,
 				42B7A630215CB82F00A72A63 /* Assets.xcassets */,
 				42FEDE1C215CCF73008420BF /* Main.storyboard */,
 				42D0DE45215CD52800F1AB45 /* EntryList.swift */,
+				D0D51EBD22116F7B00075C0B /* entrylistbackup.txt */,
 				4288709C215D4D9D0028EC52 /* MapPage.swift */,
 				42D0DE4A215CE95F00F1AB45 /* EntryCell.swift */,
 				42D0DED3215CF91300F1AB45 /* EntryPage.swift */,
@@ -185,6 +188,7 @@
 				D0D51EB72211609500075C0B /* LocalisableStrings.strings in Resources */,
 				425B6B8B215D0DC60047385C /* travelbrosDB.db in Resources */,
 				42B7A634215CB82F00A72A63 /* LaunchScreen.storyboard in Resources */,
+				D0D51EBE22116F7B00075C0B /* entrylistbackup.txt in Resources */,
 				42B7A631215CB82F00A72A63 /* Assets.xcassets in Resources */,
 				D0D51EBC2211610400075C0B /* infoPlist.strings in Resources */,
 			);
