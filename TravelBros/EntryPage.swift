@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKShareKit
+import FBSDKCoreKit
 
 class EntryPage: UIViewController {
     
@@ -40,7 +42,7 @@ class EntryPage: UIViewController {
         dateLabel.text = entryData.oneEntry.date
         entryText.text = entryData.oneEntry.entry
         addressLabel.text = entryData.oneEntry.address
-        entryImage.image = entryData.oneEntry.img
+//        entryImage.image = entryData.oneEntry.img
     }
     
     //File sharing image (non-facebook)
@@ -68,14 +70,21 @@ class EntryPage: UIViewController {
     
     //Facebook
     @IBAction func facebook(){
-//        if let img = entryImage.image{
-//            let photo = Photo(image: img, userGenerated: false)
-//            let content = PhotoShareContent(photos: [photo])
-//            let shareDialog = ShareDialog(content: content)
-//        }
-//
+        if let img = entryImage.image{
+//            let photo = FBSDKSharePhoto(image: img, userGenerated: false)
+//            let content = FBSDKSharePhotoContent(photos: [photo])
+//            let shareDialog = FBSDKShareDialog(content: content)
+            let photo = FBSDKSharePhoto()
+            photo.image = img
+            let content = FBSDKSharePhotoContent()
+            content.photos = [photo]
+//            let shareDialog = FBSDKShareDialog()
+//            shareDialog.shareContent = content
+            FBSDKShareDialog.show(from: self, with: content, delegate: nil)
+        }
+
 //        do {
-//            try shareDialog.show()
+//            try FBSDKShareDialog.show()
 //        } catch {
 //            print(error)
 //        }

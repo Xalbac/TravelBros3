@@ -57,7 +57,7 @@
     <key>FacebookAppID</key>
     <string>251949559065604</string>
     <key>FacebookDisplayName</key>
-    <string>Travelbros</string>
+    <string>TravelBros</string>
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>fbapi</string>

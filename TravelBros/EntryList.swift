@@ -102,7 +102,7 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         // HAVE TO WRITE AN SQL REMOVE THING TO MAKE IT WORK
         
         if editingStyle == .delete {
-            entry.remove(at: indexPath)
+//            entry.remove(at: indexPath)
             // THats basicalyl how it has to look lkiek
             }
         }

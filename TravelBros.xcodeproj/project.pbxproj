@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		425B6B8B215D0DC60047385C /* travelbrosDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 425B6B8A215D0DA90047385C /* travelbrosDB.db */; };
 		4288709D215D4D9D0028EC52 /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288709C215D4D9D0028EC52 /* MapPage.swift */; };
+		42A5AB4822119C2700628854 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A5AB4722119C2700628854 /* Bolts.framework */; };
+		42A5AB4C22119C3600628854 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A5AB4922119C3500628854 /* FBSDKLoginKit.framework */; };
+		42A5AB4D22119C3600628854 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A5AB4A22119C3500628854 /* FBSDKShareKit.framework */; };
+		42A5AB4E22119C3600628854 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A5AB4B22119C3500628854 /* FBSDKCoreKit.framework */; };
 		42B7A62A215CB82E00A72A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7A629215CB82E00A72A63 /* AppDelegate.swift */; };
 		42B7A631215CB82F00A72A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B7A630215CB82F00A72A63 /* Assets.xcassets */; };
 		42B7A634215CB82F00A72A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B7A632215CB82F00A72A63 /* LaunchScreen.storyboard */; };
@@ -23,13 +27,16 @@
 		42D0DED4215CF91300F1AB45 /* EntryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DED3215CF91300F1AB45 /* EntryPage.swift */; };
 		42FEDE1E215CCF73008420BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FEDE1C215CCF73008420BF /* Main.storyboard */; };
 		D008B39F215D1B3A00D13B0E /* EntryNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008B39E215D1B3A00D13B0E /* EntryNew.swift */; };
-		D0D51EB72211609500075C0B /* LocalisableStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D51EB92211609500075C0B /* LocalisableStrings.strings */; };
 		D0D51EBC2211610400075C0B /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D51EBB2211610400075C0B /* infoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		425B6B8A215D0DA90047385C /* travelbrosDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = travelbrosDB.db; sourceTree = "<group>"; };
 		4288709C215D4D9D0028EC52 /* MapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
+		42A5AB4722119C2700628854 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = SOURCE_ROOT; };
+		42A5AB4922119C3500628854 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
+		42A5AB4A22119C3500628854 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
+		42A5AB4B22119C3500628854 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
 		42B7A626215CB82E00A72A63 /* TravelBros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B7A629215CB82E00A72A63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B7A630215CB82F00A72A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,8 +60,6 @@
 		42D0DED3215CF91300F1AB45 /* EntryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPage.swift; sourceTree = "<group>"; };
 		42FEDE1D215CCF73008420BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D008B39E215D1B3A00D13B0E /* EntryNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryNew.swift; sourceTree = "<group>"; };
-		D0D51EB82211609500075C0B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LocalisableStrings.strings; sourceTree = "<group>"; };
-		D0D51EBA221160A000075C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalisableStrings.strings; sourceTree = "<group>"; };
 		D0D51EBB2211610400075C0B /* infoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = infoPlist.strings; sourceTree = "<group>"; };
 		D0D93665221102320083C168 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Main.strings; sourceTree = "<group>"; };
 		D0D93666221102330083C168 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -67,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A5AB4C22119C3600628854 /* FBSDKLoginKit.framework in Frameworks */,
+				42A5AB4E22119C3600628854 /* FBSDKCoreKit.framework in Frameworks */,
+				42A5AB4822119C2700628854 /* Bolts.framework in Frameworks */,
+				42A5AB4D22119C3600628854 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +115,10 @@
 				42B7A635215CB82F00A72A63 /* Info.plist */,
 				425B6B8A215D0DA90047385C /* travelbrosDB.db */,
 				42D0DEAE215CEF3A00F1AB45 /* FMDatabase.h */,
+				42A5AB4B22119C3500628854 /* FBSDKCoreKit.framework */,
+				42A5AB4922119C3500628854 /* FBSDKLoginKit.framework */,
+				42A5AB4A22119C3500628854 /* FBSDKShareKit.framework */,
+				42A5AB4722119C2700628854 /* Bolts.framework */,
 				42D0DECB215CF00500F1AB45 /* FMDatabase.m */,
 				42D0DECA215CF00500F1AB45 /* FMDatabaseAdditions.h */,
 				42D0DEC5215CF00500F1AB45 /* FMDatabaseAdditions.m */,
@@ -117,7 +130,6 @@
 				42D0DEC6215CF00500F1AB45 /* FMResultSet.m */,
 				42D0DED1215CF05900F1AB45 /* FMResultSet.h */,
 				42D0DED2215CF0EA00F1AB45 /* TravelBros-Bridging-Header.h */,
-				D0D51EB92211609500075C0B /* LocalisableStrings.strings */,
 			);
 			path = TravelBros;
 			sourceTree = "<group>";
@@ -182,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42FEDE1E215CCF73008420BF /* Main.storyboard in Resources */,
-				D0D51EB72211609500075C0B /* LocalisableStrings.strings in Resources */,
 				425B6B8B215D0DC60047385C /* travelbrosDB.db in Resources */,
 				42B7A634215CB82F00A72A63 /* LaunchScreen.storyboard in Resources */,
 				42B7A631215CB82F00A72A63 /* Assets.xcassets in Resources */,
@@ -233,15 +244,6 @@
 				D0D93667221102C50083C168 /* en */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D0D51EB92211609500075C0B /* LocalisableStrings.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0D51EB82211609500075C0B /* sv */,
-				D0D51EBA221160A000075C0B /* en */,
-			);
-			name = LocalisableStrings.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -303,7 +305,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -359,7 +364,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -380,6 +388,7 @@
 					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKLoginKit.framework,
 					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKShareKit.framework,
 					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKCoreKit.framework,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TravelBros/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -408,6 +417,7 @@
 					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKLoginKit.framework,
 					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKShareKit.framework,
 					/Users/edvardhedlund/Desktop/AppKurs2/TravelBros3/FBSDKCoreKit.framework,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TravelBros/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
