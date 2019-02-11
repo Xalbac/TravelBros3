@@ -19,11 +19,6 @@
 		42D0DE46215CD52800F1AB45 /* EntryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DE45215CD52800F1AB45 /* EntryList.swift */; };
 		42D0DE49215CE1B200F1AB45 /* TravelBrosSQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DE48215CE1B200F1AB45 /* TravelBrosSQL.swift */; };
 		42D0DE4B215CE95F00F1AB45 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DE4A215CE95F00F1AB45 /* EntryCell.swift */; };
-		42D0DECC215CF00500F1AB45 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DEC3215CF00500F1AB45 /* FMDatabasePool.m */; };
-		42D0DECD215CF00500F1AB45 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DEC4215CF00500F1AB45 /* FMDatabaseQueue.m */; };
-		42D0DECE215CF00500F1AB45 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DEC5215CF00500F1AB45 /* FMDatabaseAdditions.m */; };
-		42D0DECF215CF00500F1AB45 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DEC6215CF00500F1AB45 /* FMResultSet.m */; };
-		42D0DED0215CF00500F1AB45 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DECB215CF00500F1AB45 /* FMDatabase.m */; };
 		42D0DED4215CF91300F1AB45 /* EntryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DED3215CF91300F1AB45 /* EntryPage.swift */; };
 		42FEDE1E215CCF73008420BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FEDE1C215CCF73008420BF /* Main.storyboard */; };
 		D008B39F215D1B3A00D13B0E /* EntryNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008B39E215D1B3A00D13B0E /* EntryNew.swift */; };
@@ -46,16 +41,6 @@
 		42D0DE48215CE1B200F1AB45 /* TravelBrosSQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBrosSQL.swift; sourceTree = "<group>"; };
 		42D0DE4A215CE95F00F1AB45 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		42D0DEAE215CEF3A00F1AB45 /* FMDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		42D0DEC3215CF00500F1AB45 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		42D0DEC4215CF00500F1AB45 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		42D0DEC5215CF00500F1AB45 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		42D0DEC6215CF00500F1AB45 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		42D0DEC7215CF00500F1AB45 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		42D0DEC8215CF00500F1AB45 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		42D0DEC9215CF00500F1AB45 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		42D0DECA215CF00500F1AB45 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		42D0DECB215CF00500F1AB45 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		42D0DED1215CF05900F1AB45 /* FMResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		42D0DED2215CF0EA00F1AB45 /* TravelBros-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelBros-Bridging-Header.h"; sourceTree = "<group>"; };
 		42D0DED3215CF91300F1AB45 /* EntryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPage.swift; sourceTree = "<group>"; };
 		42FEDE1D215CCF73008420BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,16 +104,6 @@
 				42A5AB4922119C3500628854 /* FBSDKLoginKit.framework */,
 				42A5AB4A22119C3500628854 /* FBSDKShareKit.framework */,
 				42A5AB4722119C2700628854 /* Bolts.framework */,
-				42D0DECB215CF00500F1AB45 /* FMDatabase.m */,
-				42D0DECA215CF00500F1AB45 /* FMDatabaseAdditions.h */,
-				42D0DEC5215CF00500F1AB45 /* FMDatabaseAdditions.m */,
-				42D0DEC7215CF00500F1AB45 /* FMDatabasePool.h */,
-				42D0DEC3215CF00500F1AB45 /* FMDatabasePool.m */,
-				42D0DEC8215CF00500F1AB45 /* FMDatabaseQueue.h */,
-				42D0DEC4215CF00500F1AB45 /* FMDatabaseQueue.m */,
-				42D0DEC9215CF00500F1AB45 /* FMDB.h */,
-				42D0DEC6215CF00500F1AB45 /* FMResultSet.m */,
-				42D0DED1215CF05900F1AB45 /* FMResultSet.h */,
 				42D0DED2215CF0EA00F1AB45 /* TravelBros-Bridging-Header.h */,
 			);
 			path = TravelBros;
@@ -210,16 +185,11 @@
 			files = (
 				42D0DE4B215CE95F00F1AB45 /* EntryCell.swift in Sources */,
 				42D0DE46215CD52800F1AB45 /* EntryList.swift in Sources */,
-				42D0DECC215CF00500F1AB45 /* FMDatabasePool.m in Sources */,
 				4288709D215D4D9D0028EC52 /* MapPage.swift in Sources */,
-				42D0DED0215CF00500F1AB45 /* FMDatabase.m in Sources */,
 				42B7A62A215CB82E00A72A63 /* AppDelegate.swift in Sources */,
 				42D0DE49215CE1B200F1AB45 /* TravelBrosSQL.swift in Sources */,
-				42D0DECE215CF00500F1AB45 /* FMDatabaseAdditions.m in Sources */,
 				42D0DED4215CF91300F1AB45 /* EntryPage.swift in Sources */,
-				42D0DECF215CF00500F1AB45 /* FMResultSet.m in Sources */,
 				D008B39F215D1B3A00D13B0E /* EntryNew.swift in Sources */,
-				42D0DECD215CF00500F1AB45 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
