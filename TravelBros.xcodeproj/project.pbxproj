@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121FFA2935FD33C096CA3725 /* Pods_TravelBros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFFB1F7C715C2FB8B979FB0 /* Pods_TravelBros.framework */; };
 		425B6B8B215D0DC60047385C /* travelbrosDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 425B6B8A215D0DA90047385C /* travelbrosDB.db */; };
 		4288709D215D4D9D0028EC52 /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288709C215D4D9D0028EC52 /* MapPage.swift */; };
 		42B7A62A215CB82E00A72A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7A629215CB82E00A72A63 /* AppDelegate.swift */; };
@@ -52,6 +53,9 @@
 		42D0DED2215CF0EA00F1AB45 /* TravelBros-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelBros-Bridging-Header.h"; sourceTree = "<group>"; };
 		42D0DED3215CF91300F1AB45 /* EntryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPage.swift; sourceTree = "<group>"; };
 		42FEDE1D215CCF73008420BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DD69AC5FA01EAE4F3F8FAA1 /* Pods-TravelBros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBros.debug.xcconfig"; path = "Target Support Files/Pods-TravelBros/Pods-TravelBros.debug.xcconfig"; sourceTree = "<group>"; };
+		53E8AFBF11F7851EC8FC5AED /* Pods-TravelBros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBros.release.xcconfig"; path = "Target Support Files/Pods-TravelBros/Pods-TravelBros.release.xcconfig"; sourceTree = "<group>"; };
+		CAFFB1F7C715C2FB8B979FB0 /* Pods_TravelBros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelBros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D008B39E215D1B3A00D13B0E /* EntryNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryNew.swift; sourceTree = "<group>"; };
 		D0D51EB82211609500075C0B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LocalisableStrings.strings; sourceTree = "<group>"; };
 		D0D51EBA221160A000075C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalisableStrings.strings; sourceTree = "<group>"; };
@@ -67,17 +71,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				121FFA2935FD33C096CA3725 /* Pods_TravelBros.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ABD88F8F034D25FDC33D7F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAFFB1F7C715C2FB8B979FB0 /* Pods_TravelBros.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42B7A61D215CB82E00A72A63 = {
 			isa = PBXGroup;
 			children = (
 				42B7A628215CB82E00A72A63 /* TravelBros */,
 				42B7A627215CB82E00A72A63 /* Products */,
+				E1CCFA983777F68F0DDE2EF9 /* Pods */,
+				1ABD88F8F034D25FDC33D7F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +137,16 @@
 			path = TravelBros;
 			sourceTree = "<group>";
 		};
+		E1CCFA983777F68F0DDE2EF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DD69AC5FA01EAE4F3F8FAA1 /* Pods-TravelBros.debug.xcconfig */,
+				53E8AFBF11F7851EC8FC5AED /* Pods-TravelBros.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42B7A638215CB82F00A72A63 /* Build configuration list for PBXNativeTarget "TravelBros" */;
 			buildPhases = (
+				9D37F68487F6D2C877B73469 /* [CP] Check Pods Manifest.lock */,
 				42B7A622215CB82E00A72A63 /* Sources */,
 				42B7A623215CB82E00A72A63 /* Frameworks */,
 				42B7A624215CB82E00A72A63 /* Resources */,
@@ -191,6 +217,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D37F68487F6D2C877B73469 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelBros-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42B7A622215CB82E00A72A63 /* Sources */ = {
@@ -369,6 +420,7 @@
 		};
 		42B7A639215CB82F00A72A63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD69AC5FA01EAE4F3F8FAA1 /* Pods-TravelBros.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -397,6 +449,7 @@
 		};
 		42B7A63A215CB82F00A72A63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E8AFBF11F7851EC8FC5AED /* Pods-TravelBros.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
