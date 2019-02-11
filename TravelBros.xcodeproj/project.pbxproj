@@ -24,6 +24,7 @@
 		42D0DED4215CF91300F1AB45 /* EntryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DED3215CF91300F1AB45 /* EntryPage.swift */; };
 		42FEDE1E215CCF73008420BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FEDE1C215CCF73008420BF /* Main.storyboard */; };
 		D008B39F215D1B3A00D13B0E /* EntryNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008B39E215D1B3A00D13B0E /* EntryNew.swift */; };
+		D01D2482221184FE00C920D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D01D2481221184FE00C920D7 /* GoogleService-Info.plist */; };
 		D0D51EB72211609500075C0B /* LocalisableStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D51EB92211609500075C0B /* LocalisableStrings.strings */; };
 		D0D51EBC2211610400075C0B /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D51EBB2211610400075C0B /* infoPlist.strings */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		53E8AFBF11F7851EC8FC5AED /* Pods-TravelBros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBros.release.xcconfig"; path = "Target Support Files/Pods-TravelBros/Pods-TravelBros.release.xcconfig"; sourceTree = "<group>"; };
 		CAFFB1F7C715C2FB8B979FB0 /* Pods_TravelBros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelBros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D008B39E215D1B3A00D13B0E /* EntryNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryNew.swift; sourceTree = "<group>"; };
+		D01D2481221184FE00C920D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0D51EB82211609500075C0B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LocalisableStrings.strings; sourceTree = "<group>"; };
 		D0D51EBA221160A000075C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalisableStrings.strings; sourceTree = "<group>"; };
 		D0D51EBB2211610400075C0B /* infoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = infoPlist.strings; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		42B7A628215CB82E00A72A63 /* TravelBros */ = {
 			isa = PBXGroup;
 			children = (
+				D01D2481221184FE00C920D7 /* GoogleService-Info.plist */,
 				D0D51EBB2211610400075C0B /* infoPlist.strings */,
 				42B7A629215CB82E00A72A63 /* AppDelegate.swift */,
 				42B7A630215CB82F00A72A63 /* Assets.xcassets */,
@@ -143,7 +146,6 @@
 				4DD69AC5FA01EAE4F3F8FAA1 /* Pods-TravelBros.debug.xcconfig */,
 				53E8AFBF11F7851EC8FC5AED /* Pods-TravelBros.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +215,7 @@
 				42B7A634215CB82F00A72A63 /* LaunchScreen.storyboard in Resources */,
 				42B7A631215CB82F00A72A63 /* Assets.xcassets in Resources */,
 				D0D51EBC2211610400075C0B /* infoPlist.strings in Resources */,
+				D01D2482221184FE00C920D7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
