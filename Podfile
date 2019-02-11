@@ -6,6 +6,5 @@ target 'TravelBros' do
   use_frameworks!
 
   # Pods for TravelBros
-	pod 'Firebase/Core'
 
 end
