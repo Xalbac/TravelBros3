@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p4m-MF-gRm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,30 +29,49 @@
             </objects>
             <point key="canvasLocation" x="-1498" y="8"/>
         </scene>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="5eN-Ud-NuT">
             <objects>
-                <viewController id="nD5-K9-Zcp" sceneMemberID="viewController">
+                <viewController id="nD5-K9-Zcp" customClass="StartViewController" customModule="TravelBros" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZO-RS-twl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCp-si-QBE">
+                                <rect key="frame" x="64" y="100" width="246" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Signup"/>
+                                <connections>
+                                    <segue destination="jFS-CZ-lPf" kind="show" id="430-Hx-bCC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wl-Xk-ILw">
+                                <rect key="frame" x="64" y="326" width="246" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="ES5-aN-UsS" kind="show" id="vqW-50-99I"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jln-bo-F1L"/>
                     </view>
                     <navigationItem key="navigationItem" id="h7r-MU-x1U"/>
                     <connections>
                         <segue destination="SiI-QF-lho" kind="show" id="3C3-FL-zfc"/>
-                        <segue destination="jFS-CZ-lPf" kind="show" id="i1X-jx-l5B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3AH-id-MAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-774" y="2"/>
+            <point key="canvasLocation" x="-746.39999999999998" y="7.6461769115442282"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="gUw-MG-vbC">
             <objects>
-                <viewController id="jFS-CZ-lPf" sceneMemberID="viewController">
+                <viewController id="jFS-CZ-lPf" customClass="SignupViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Nk-ia-lST">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,6 +295,24 @@
             </objects>
             <point key="canvasLocation" x="2513" y="-3"/>
         </scene>
+        <!--Loogin View Controller-->
+        <scene sceneID="7dX-bK-efY">
+            <objects>
+                <viewController id="ES5-aN-UsS" customClass="LooginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C3h-zZ-VKF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LEw-91-QZF"/>
+                    </view>
+                    <connections>
+                        <segue destination="SiI-QF-lho" kind="show" id="grX-AB-M0z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nnB-hT-jpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="688"/>
+        </scene>
         <!--Entry List-->
         <scene sceneID="cG9-w8-OBz">
             <objects>
@@ -454,5 +491,8 @@
             <point key="canvasLocation" x="1648.8" y="759.67016491754134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3C3-FL-zfc"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
