@@ -1,0 +1,13 @@
+/* 
+  LocalisableStrings.strings
+  TravelBros
+
+  Created by Peter on 2019-02-11.
+  Copyright © 2019 Edvard Hedlund. All rights reserved.
+*/
+"Done" = "Klar"
+"Cancel" = "Avbryt"
+"Signup" = "Registrera"
+"Login" = "Logga in"
+"Add" = "Lägg till"
+"Edit" = "Redigera"
