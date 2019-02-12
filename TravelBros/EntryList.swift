@@ -103,9 +103,11 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         if editingStyle == .delete {
             /*if entryData.deleteEntry(entryId: deleteEntrylol[indexPath.row].id){
             }*/
+            let row = indexPath.row
+            let entryCell = entryData.entryArray[row]
             entryData.entryArray.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-            entryData.deleteEntry(entryId: indexPath.row)
+            entryData.deleteEntry(entryId: entryCell.id)
         }
         if editingStyle == .insert{
             
