@@ -132,8 +132,8 @@
                                                         <action selector="nyBild:" destination="9vs-p1-0fu" eventType="touchUpInside" id="iPp-ys-rjy"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWg-ps-RMd">
-                                                    <rect key="frame" x="11" y="158" width="62" height="34"/>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWg-ps-RMd">
+                                                    <rect key="frame" x="11" y="158" width="66" height="34"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <state key="normal" title="Gallery">
@@ -198,7 +198,6 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="saveData" destination="9vs-p1-0fu" eventType="touchUpInside" id="6l6-J7-M2n"/>
-                                                        <segue destination="SiI-QF-lho" kind="show" identifier="backToEntryList" id="S81-Ek-ahX"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -223,6 +222,7 @@
                         <outlet property="entryImage" destination="bbn-RM-0Fd" id="jIQ-TS-dSu"/>
                         <outlet property="textAddress" destination="YrQ-zc-heV" id="oWV-we-ef6"/>
                         <outlet property="textDatePick" destination="FFc-Jf-qkn" id="brs-HB-3j2"/>
+                        <segue destination="SiI-QF-lho" kind="show" identifier="backToEntryList" id="Ed7-oz-BL0"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ykO-GL-p9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -431,7 +431,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="S81-Ek-ahX"/>
+        <segue reference="Ed7-oz-BL0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
