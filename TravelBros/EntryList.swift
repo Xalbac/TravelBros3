@@ -100,13 +100,11 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         // HAVE TO WRITE AN SQL REMOVE THING TO MAKE IT WORK
-        let cell = tableView.dequeueReusableCell(withIdentifier: "entryID", for: indexPath) as! EntryCell
-        let row = indexPath.row
-        var deleteEntrylol = entryData.entryArray[row]
         if editingStyle == .delete {
-            if entryData.deleteEntry(entryId: deleteEntrylol[indexPath.row].id){
-                
-            }
+            /*if entryData.deleteEntry(entryId: deleteEntrylol[indexPath.row].id){
+            }*/
+            entryData.entryArray.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
