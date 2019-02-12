@@ -27,7 +27,7 @@
 		42D0DED4215CF91300F1AB45 /* EntryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DED3215CF91300F1AB45 /* EntryPage.swift */; };
 		42FEDE1E215CCF73008420BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FEDE1C215CCF73008420BF /* Main.storyboard */; };
 		D008B39F215D1B3A00D13B0E /* EntryNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008B39E215D1B3A00D13B0E /* EntryNew.swift */; };
-		D01D24A52211AE8300C920D7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D24A42211AE8300C920D7 /* StartViewController.swift */; };
+		D01D24A52211AE8300C920D7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D24A42211AE8300C920D7 /* LoginController.swift */; };
 		D0D51EBC2211610400075C0B /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D51EBB2211610400075C0B /* infoPlist.strings */; };
 		D0F6BC6E2212CA780092A20A /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6BC6D2212CA780092A20A /* DBManager.swift */; };
 /* End PBXBuildFile section */
@@ -62,7 +62,7 @@
 		42D0DED3215CF91300F1AB45 /* EntryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPage.swift; sourceTree = "<group>"; };
 		42FEDE1D215CCF73008420BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D008B39E215D1B3A00D13B0E /* EntryNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryNew.swift; sourceTree = "<group>"; };
-		D01D24A42211AE8300C920D7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		D01D24A42211AE8300C920D7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		D0D51EBB2211610400075C0B /* infoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = infoPlist.strings; sourceTree = "<group>"; };
 		D0D93665221102320083C168 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Main.strings; sourceTree = "<group>"; };
 		D0D93666221102330083C168 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -114,6 +114,7 @@
 				42D0DE4A215CE95F00F1AB45 /* EntryCell.swift */,
 				42D0DED3215CF91300F1AB45 /* EntryPage.swift */,
 				D008B39E215D1B3A00D13B0E /* EntryNew.swift */,
+				D01D24A42211AE8300C920D7 /* LoginController.swift */,
 				42D0DE48215CE1B200F1AB45 /* TravelBrosSQL.swift */,
 				D0F6BC6D2212CA780092A20A /* DBManager.swift */,
 				42B7A632215CB82F00A72A63 /* LaunchScreen.storyboard */,
@@ -135,7 +136,6 @@
 				42D0DEC6215CF00500F1AB45 /* FMResultSet.m */,
 				42D0DED1215CF05900F1AB45 /* FMResultSet.h */,
 				42D0DED2215CF0EA00F1AB45 /* TravelBros-Bridging-Header.h */,
-				D01D24A42211AE8300C920D7 /* StartViewController.swift */,
 			);
 			path = TravelBros;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 				42B7A62A215CB82E00A72A63 /* AppDelegate.swift in Sources */,
 				42D0DE49215CE1B200F1AB45 /* TravelBrosSQL.swift in Sources */,
 				42D0DECE215CF00500F1AB45 /* FMDatabaseAdditions.m in Sources */,
-				D01D24A52211AE8300C920D7 /* StartViewController.swift in Sources */,
+				D01D24A52211AE8300C920D7 /* LoginController.swift in Sources */,
 				42D0DED4215CF91300F1AB45 /* EntryPage.swift in Sources */,
 				42D0DECF215CF00500F1AB45 /* FMResultSet.m in Sources */,
 				D008B39F215D1B3A00D13B0E /* EntryNew.swift in Sources */,
