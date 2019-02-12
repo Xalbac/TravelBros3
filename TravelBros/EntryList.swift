@@ -104,8 +104,9 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         let row = indexPath.row
         var deleteEntrylol = entryData.entryArray[row]
         if editingStyle == .delete {
-            deleteEntrylol.deleteEntry(at: deleteEntry)
-            tableView.deleteRows(at: <#T##[IndexPath]#>, with: <#T##UITableView.RowAnimation#>)
+            if entryData.deleteEntry(entryId: deleteEntrylol[indexPath.row].id){
+                
+            }
         }
     }
     

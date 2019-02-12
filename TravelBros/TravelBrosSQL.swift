@@ -21,7 +21,6 @@ class TravelBrosSQL {
     var entryArray:[Entry] = []
     var searchArray:[Entry] = []
     var oneEntry = Entry()
-    var oneUser = User()
     var dbPath = ""
     
     init() {
@@ -87,11 +86,11 @@ class TravelBrosSQL {
         }
     }
     
-    func deleteEntry(){
+    func deleteEntry(entryId: String){
         let database = FMDatabase(path: dbPath)
         if database.open(){
             do{
-                let entrySet = try database.executeQuery("DELETE from entries WHERE id=?", values: [entryId])
+                try database.executeQuery("DELETE from entries WHERE id=?", values: [ID])
             }
             catch{
                 print(error)
