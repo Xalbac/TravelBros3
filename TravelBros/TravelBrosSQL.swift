@@ -86,16 +86,31 @@ class TravelBrosSQL {
         }
     }
     
-    func deleteEntry(entryId: String){
+    func deleteEntry(entryId:String){
+        print("WE HAVE ACCESSED THE FUNCTION")
+        print(entryId)
         let database = FMDatabase(path: dbPath)
         if database.open(){
             do{
-                try database.executeQuery("DELETE from entries WHERE id=?", values: [entryId])
+                try database.executeUpdate("delete from entries WHERE id=?", values: [entryId])
+                print("WE HAVE ACCESSED THE DATABASE")
+                print("WHAT AM I DOING WRONG, WHY ARENT YOU DELETEING!!!!")
+                print("ITS WORKING ! ITS WOOORKINGIIIIIGGIGNGGIGINGNIDIBDISADISABSASOANDJSAS!")
             }
             catch{
+                print("OH NO AN ERROR")
                 print(error)
             }
         database.close()
+        }
+    }
+    
+    func editEntry(){
+        let database = FMDatabase(path: dbPath)
+        if database.open(){
+            do{
+                print("Uhhh something wittty")
+            }
         }
     }
     

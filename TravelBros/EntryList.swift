@@ -104,13 +104,17 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             /*if entryData.deleteEntry(entryId: deleteEntrylol[indexPath.row].id){
             }*/
             let row = indexPath.row
+            print("row: ")
+            print(row)
             let entryCell = entryData.entryArray[row]
-            entryData.entryArray.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            print(entryCell)
+            print("entrycell.id: " + entryCell.id)
             entryData.deleteEntry(entryId: entryCell.id)
-        }
-        if editingStyle == .insert{
-            
+            print("at this point we access delete netry")
+            entryData.entryArray.remove(at: indexPath.row)
+            print("at this point we remove data from array")
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            //l
         }
     }
     
