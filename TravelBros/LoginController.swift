@@ -20,9 +20,9 @@ class LoginController: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         if UserDefaults.standard.string(forKey: "password") == nil {
-//            createUser()
+            createUser()
         } else {
-//            logIn()
+            logIn()
         }
     }
     
@@ -71,7 +71,7 @@ class LoginController: UIViewController{
                 let pass = UserDefaults.standard.string(forKey: "password")
                 if pw256 == pass {
                     //Login action
-                    
+                   self.performSegue(withIdentifier: "segToList", sender: self)
                 } else {
                     print("fail")
                 }
