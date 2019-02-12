@@ -17,11 +17,6 @@ class TravelBrosSQL {
         var address = ""
         var entry = ""
     }
-    struct User{
-        var id = ""
-        var username = ""
-        var password = ""
-    }
     
     var entryArray:[Entry] = []
     var searchArray:[Entry] = []
@@ -92,7 +87,7 @@ class TravelBrosSQL {
         }
     }
     
-    func deleteEntry(entryId:String){
+    func deleteEntry(){
         let database = FMDatabase(path: dbPath)
         if database.open(){
             do{
@@ -124,8 +119,6 @@ class TravelBrosSQL {
             }
             UIGraphicsEndImageContext()
         }
-        
-        // WELL this is the delete function, but how do I do it? I mean, it would be way easier to do this in firebase i guess
         
         let database = FMDatabase(path: dbPath)
         if database.open() {
