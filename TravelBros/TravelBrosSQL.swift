@@ -90,7 +90,7 @@ class TravelBrosSQL {
         let database = FMDatabase(path: dbPath)
         if database.open(){
             do{
-                try database.executeQuery("DELETE from entries WHERE id=?", values: [])
+                try database.executeQuery("DELETE from entries WHERE id=?", values: [entryId])
             }
             catch{
                 print(error)
