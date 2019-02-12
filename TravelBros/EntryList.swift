@@ -106,6 +106,9 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             entryData.entryArray.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+        if editingStyle == .insert{
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
