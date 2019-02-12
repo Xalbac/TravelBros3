@@ -64,6 +64,7 @@ class EntryNew: UITableViewController, UITextFieldDelegate, UIImagePickerControl
         }
     
         entryData.uploadData()
+        self.performSegue(withIdentifier: "backToEntryList", sender: self)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
