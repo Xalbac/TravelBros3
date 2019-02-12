@@ -86,7 +86,7 @@ class TravelBrosSQL {
         }
     }
     
-    func deleteEntry(entryId: Int){
+    func deleteEntry(entryId: String){
         let database = FMDatabase(path: dbPath)
         if database.open(){
             do{
