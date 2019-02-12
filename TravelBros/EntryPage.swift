@@ -10,7 +10,7 @@ import UIKit
 import FBSDKShareKit
 import FBSDKCoreKit
 
-class EntryPage: UIViewController {
+class EntryPage: UIViewController, UIDocumentPickerDelegate {
     
     // Connect all outlets to appropriate things. 
     @IBOutlet weak var dateLabel: UILabel!
@@ -42,7 +42,7 @@ class EntryPage: UIViewController {
         dateLabel.text = entryData.oneEntry.date
         entryText.text = entryData.oneEntry.entry
         addressLabel.text = entryData.oneEntry.address
-//        entryImage.image = entryData.oneEntry.img
+        entryImage.image = entryData.oneEntry.img
     }
     
     //File sharing image (non-facebook)
@@ -68,26 +68,39 @@ class EntryPage: UIViewController {
         
     }
     
-    //Facebook
+    
+    //Facebook share image
     @IBAction func facebook(){
         if let img = entryImage.image{
-//            let photo = FBSDKSharePhoto(image: img, userGenerated: false)
-//            let content = FBSDKSharePhotoContent(photos: [photo])
-//            let shareDialog = FBSDKShareDialog(content: content)
             let photo = FBSDKSharePhoto()
             photo.image = img
             let content = FBSDKSharePhotoContent()
             content.photos = [photo]
-//            let shareDialog = FBSDKShareDialog()
-//            shareDialog.shareContent = content
             FBSDKShareDialog.show(from: self, with: content, delegate: nil)
         }
-
-//        do {
-//            try FBSDKShareDialog.show()
-//        } catch {
-//            print(error)
-//        }
+    }
+    
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        if controller.documentPickerMode == .open {
+            if let fileURL = urls.first {
+                let ext = fileURL.pathExtension
+                let secure = fileURL.startAccessingSecurityScopedResource()
+                if !secure { return}
+                do {
+                    if ext == "txt" {
+                        entryText.text = try String(contentsOf: fileURL, encoding: .utf8)
+                        
+                    } else if ext == "jpg" {
+                        let imageData = try Data(contentsOf: fileURL)
+                        entryImage.image = UIImage(data: imageData)
+                    }
+                    fileURL.stopAccessingSecurityScopedResource()
+                }
+                catch {
+                    // hantera fel
+                }
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
