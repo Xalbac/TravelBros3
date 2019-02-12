@@ -17,10 +17,16 @@ class TravelBrosSQL {
         var address = ""
         var entry = ""
     }
+    struct User{
+        var id = ""
+        var username = ""
+        var password = ""
+    }
     
     var entryArray:[Entry] = []
     var searchArray:[Entry] = []
     var oneEntry = Entry()
+    var oneUser = User()
     var dbPath = ""
     
     init() {
@@ -86,6 +92,18 @@ class TravelBrosSQL {
         }
     }
     
+    func deleteEntry(entryId:String){
+        let database = FMDatabase(path: dbPath)
+        if database.open(){
+            do{
+                let entrySet = try database.executeQuery("DELETE from entries WHERE id=?", values: [entryId])
+            }
+            catch{
+                print(error)
+            }
+        database.close()
+        }
+    }
     
     //Laddar upp till data basen
     func uploadData() {
@@ -105,28 +123,10 @@ class TravelBrosSQL {
                 imgJpeg = jpegData
             }
             UIGraphicsEndImageContext()
-            
-//            UIGraphicsBeginImageContext(CGSize(width: 80, height: 80))
-//            ratio = Double(image.size.width/image.size.height)
-//            scaleWidth = ratio*80.0
-//            scaleHeight = 80.0
-//            offsetX = (scaleWidth-80)/2.0
-//            offsetY = 0.0
-//            image.draw(in: CGRect(x: -offsetX, y: -offsetY, width: scaleWidth, height: scaleHeight))
-//            if let largeImg = largeImg = largeImg.jpegData(compressionQuality: 0.7) {
-////                thumbJpeg = jpegData
-//            }
-//            UIGraphicsEndImageContext()
         }
         
-        
         // WELL this is the delete function, but how do I do it? I mean, it would be way easier to do this in firebase i guess
-//        func dlete(){
-//            var deleteStatemnt: OpaquePointer? = nil
-//            if database.open(){
-//
-//            }
-//        }
+        
         let database = FMDatabase(path: dbPath)
         if database.open() {
             do {
