@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-1353" y="26"/>
         </scene>
-        <!--Start View Controller-->
+        <!--Login Controller-->
         <scene sceneID="5eN-Ud-NuT">
             <objects>
-                <viewController id="nD5-K9-Zcp" customClass="StartViewController" customModule="TravelBros" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nD5-K9-Zcp" customClass="LoginController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZO-RS-twl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="h7r-MU-x1U"/>
                     <connections>
-                        <segue destination="SiI-QF-lho" kind="show" id="3C3-FL-zfc"/>
+                        <segue destination="SiI-QF-lho" kind="show" identifier="segToList" id="3C3-FL-zfc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3AH-id-MAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
