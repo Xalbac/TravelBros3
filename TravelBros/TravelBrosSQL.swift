@@ -105,27 +105,53 @@ class TravelBrosSQL {
         }
     }
     
-    /*func editEntry(entryId:String,entryDate:String,entryAdrs:String,entryEntry:String,entryImg:UIImage?){
+    func editEntry(entryId:String){
+        print("=============")
+        print("edit entry")
+        var imgJpeg:Data?
+        if let image = oneEntry.img {
+            UIGraphicsBeginImageContext(CGSize(width: 800, height: 475))
+            let ratio = Double(image.size.width/image.size.height)
+            let scaleWidth = 800.0
+            let scaleHeight = 800.0/ratio
+            let offsetX = 0.0
+            let offsetY = (scaleHeight-475)/2.0
+            image.draw(in: CGRect(x: -offsetX, y: -offsetY, width: scaleWidth, height: scaleHeight))
+            let largeImg = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            if let largeImg = largeImg, let jpegData = largeImg.jpegData(compressionQuality: 0.7) {
+                imgJpeg = jpegData
+            }
+            UIGraphicsEndImageContext()
+        }
         let database = FMDatabase(path: dbPath)
         if database.open(){
             do{
+                if let imgJpeg = imgJpeg{
                 print("Uhhh something wittty")
-                let entrySet = try database.executeUpdate("UPDATE entries SET date=?,img=?,address=?,entry=? WHERE id=?", values: [entryDate,entryImg,entryAdrs,entryEntry,entryId])
+                try database.executeUpdate("UPDATE entries SET date=?,img=?,address=?,entry=? WHERE id=?", values: [oneEntry.date,oneEntry.entry, oneEntry.address, imgJpeg, entryId])
+                print("we did the dartabase execution aweosme")
+                }
                 
+            }catch{
+                print("OH NO AN ERROR")
+                print(error)
             }
+            database.close()
         }
-    }*/
+    }
     
     //Laddar upp till data basen
     func uploadData() {
         var imgJpeg:Data?
         if let image = oneEntry.img {
             UIGraphicsBeginImageContext(CGSize(width: 800, height: 475))
-            var ratio = Double(image.size.width/image.size.height)
-            var scaleWidth = 800.0
-            var scaleHeight = 800.0/ratio
-            var offsetX = 0.0
-            var offsetY = (scaleHeight-475)/2.0
+            let ratio = Double(image.size.width/image.size.height)
+            let scaleWidth = 800.0
+            let scaleHeight = 800.0/ratio
+            let offsetX = 0.0
+            let offsetY = (scaleHeight-475)/2.0
             image.draw(in: CGRect(x: -offsetX, y: -offsetY, width: scaleWidth, height: scaleHeight))
             let largeImg = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()

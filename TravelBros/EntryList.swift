@@ -118,9 +118,38 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         }
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let editButton = UITableViewRowAction(style: .normal, title: "Edit"){(rowAction,indexPath)in
+            print("EDIT")
+            let row = indexPath.row
+            let entryCell2 = self.entryData.entryArray[row]
+            self.performSegue(withIdentifier: "toEntryEdit", sender: row)
+        }
+        editButton.backgroundColor = UIColor.green
+
+        let deleteButton = UITableViewRowAction(style: .normal, title: "Delete"){(rowAction,indexPath)in
+            print("DELETE")
+            let row = indexPath.row
+            print("row: ")
+            print(row)
+            let entryCell = self.entryData.entryArray[row]
+            print(entryCell)
+            print("entrycell.id: " + entryCell.id)
+            self.entryData.deleteEntry(entryId: entryCell.id)
+            print("at this point we access delete netry")
+            self.entryData.entryArray.remove(at: indexPath.row)
+            print("at this point we remove data from array")
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        deleteButton.backgroundColor = UIColor.red
+        return [editButton,deleteButton]
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 }
-
