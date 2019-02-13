@@ -4,3 +4,4 @@
 
 #import "FMDatabase.h"
 #import "FMDatabaseAdditions.h"
+#import "Motion.h"
