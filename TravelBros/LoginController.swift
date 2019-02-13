@@ -27,19 +27,19 @@ class LoginController: UIViewController{
     }
     
     func createUser() {
-        let alertController = UIAlertController(title:"Skapa användare", message: "Fyll i användar id och lösenord", preferredStyle: .alert)
+        let alertController = UIAlertController(title:"Create user", message: "Please complete this form", preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
-            textField.placeholder = "Användar ID"
+            textField.placeholder = "User ID"
         }
         alertController.addTextField { (textField) in
-            textField.placeholder = "Lösenord"
+            textField.placeholder = "Password"
             textField.isSecureTextEntry = true
         }
         
-        alertController.addAction(UIAlertAction(title: "Avbryt", style: .default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         
-        let loginAction = UIAlertAction(title: "Bekräfta", style: .default, handler: { action in
+        let loginAction = UIAlertAction(title: "Accpet", style: .default, handler: { action in
             if let id = alertController.textFields?[0].text , let pw = alertController.textFields?[1].text {
                 let pw256 = self.hash256(pw)
                 print(pw256!)
@@ -53,19 +53,19 @@ class LoginController: UIViewController{
     }
     
     func logIn() {
-        let alertController = UIAlertController(title:"Logga in", message: "Du måste logga in för att använda tjänsten", preferredStyle: .alert)
+        let alertController = UIAlertController(title:"Login", message: "You must log in to use the app", preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
-            textField.placeholder = "Användar ID"
+            textField.placeholder = "User ID"
         }
         alertController.addTextField { (textField) in
-            textField.placeholder = "Lösenord"
+            textField.placeholder = "Password"
             textField.isSecureTextEntry = true
         }
         
-        alertController.addAction(UIAlertAction(title: "Avbryt", style: .default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         
-        let loginAction = UIAlertAction(title: "Bekräfta", style: .default, handler: { action in
+        let loginAction = UIAlertAction(title: "Accept", style: .default, handler: { action in
             if let pw = alertController.textFields?[1].text {
                 let pw256 = self.hash256(pw)
                 let pass = UserDefaults.standard.string(forKey: "password")
