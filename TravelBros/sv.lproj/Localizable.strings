@@ -1,0 +1,13 @@
+/*
+ Localizable.strings
+ TravelBros
+ 
+ Created by Peter on 2019-02-13.
+ Copyright © 2019 Edvard Hedlund. All rights reserved.
+ */
+"loginTitle" = "Logga in";
+"loginDesc" = "Fyll i formen för att logga in";
+"loginUsername" = "Användarnamn";
+"loginPassword" = "Lösenord";
+"loginCancel" = "Avbyrt";
+"loginAccept" = "Bekräfta";

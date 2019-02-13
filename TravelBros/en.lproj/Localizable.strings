@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  TravelBros
+
+  Created by Peter on 2019-02-13.
+  Copyright © 2019 Edvard Hedlund. All rights reserved.
+*/
+"loginTitle" = "Login";
+"loginDesc" = "Please signup/login to use the app.";
+"loginUsername" = "Username";
+"loginPassword" = "Password";
+"loginCancel" = "Cancel";
+"loginAccept" = "Accept";

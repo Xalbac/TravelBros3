@@ -27,19 +27,19 @@ class LoginController: UIViewController{
     }
     
     func createUser() {
-        let alertController = UIAlertController(title:"Create user", message: "Please complete this form", preferredStyle: .alert)
+        let alertController = UIAlertController(title:NSLocalizedString("loginTitle", comment: "Login sstuff"), message:NSLocalizedString("loginDesc", comment: "Descripion of login"), preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
-            textField.placeholder = "User ID"
+            textField.placeholder = NSLocalizedString("loginUsername", comment: "Username")
         }
         alertController.addTextField { (textField) in
-            textField.placeholder = "Password"
+            textField.placeholder = NSLocalizedString("loginPassword", comment: "Password")
             textField.isSecureTextEntry = true
         }
         
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        alertController.addAction(UIAlertAction(title: NSLocalizedString("loginCancel", comment: "Cancel"), style: .default, handler: nil))
         
-        let loginAction = UIAlertAction(title: "Accpet", style: .default, handler: { action in
+        let loginAction = UIAlertAction(title: NSLocalizedString("loginAccept", comment: "Accept"), style: .default, handler: { action in
             if let id = alertController.textFields?[0].text , let pw = alertController.textFields?[1].text {
                 let pw256 = self.hash256(pw)
                 print(pw256!)
@@ -53,19 +53,19 @@ class LoginController: UIViewController{
     }
     
     func logIn() {
-        let alertController = UIAlertController(title:"Login", message: "You must log in to use the app", preferredStyle: .alert)
+        let alertController = UIAlertController(title:NSLocalizedString("loginTitle", comment: "Title"), message: NSLocalizedString("loginDesc", comment: "Descritpion"), preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
-            textField.placeholder = "User ID"
+            textField.placeholder = NSLocalizedString("loginUsername", comment: "Username")
         }
         alertController.addTextField { (textField) in
-            textField.placeholder = "Password"
+            textField.placeholder = NSLocalizedString("loginPassword", comment: "Password")
             textField.isSecureTextEntry = true
         }
         
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        alertController.addAction(UIAlertAction(title: NSLocalizedString("loginCancel", comment: "Cancel"), style: .default, handler: nil))
         
-        let loginAction = UIAlertAction(title: "Accept", style: .default, handler: { action in
+        let loginAction = UIAlertAction(title: NSLocalizedString("loginAccept", comment: "Accept"), style: .default, handler: { action in
             if let pw = alertController.textFields?[1].text {
                 let pw256 = self.hash256(pw)
                 let pass = UserDefaults.standard.string(forKey: "password")
