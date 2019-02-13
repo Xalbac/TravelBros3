@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422179962214131F00737893 /* ScanPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422179952214131F00737893 /* ScanPage.swift */; };
+		422179992214137B00737893 /* Motion.m in Sources */ = {isa = PBXBuildFile; fileRef = 422179982214137A00737893 /* Motion.m */; };
+		4221799B2214139A00737893 /* Fruit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4221799A2214139A00737893 /* Fruit.mlmodel */; };
 		425B6B8B215D0DC60047385C /* travelbrosDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 425B6B8A215D0DA90047385C /* travelbrosDB.db */; };
 		4288709D215D4D9D0028EC52 /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288709C215D4D9D0028EC52 /* MapPage.swift */; };
 		42A5AB4822119C2700628854 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A5AB4722119C2700628854 /* Bolts.framework */; };
@@ -33,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		422179952214131F00737893 /* ScanPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPage.swift; sourceTree = "<group>"; };
+		422179972214137A00737893 /* Motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motion.h; sourceTree = SOURCE_ROOT; };
+		422179982214137A00737893 /* Motion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Motion.m; sourceTree = SOURCE_ROOT; };
+		4221799A2214139A00737893 /* Fruit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Fruit.mlmodel; sourceTree = SOURCE_ROOT; };
 		425B6B8A215D0DA90047385C /* travelbrosDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = travelbrosDB.db; sourceTree = "<group>"; };
 		4288709C215D4D9D0028EC52 /* MapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
 		42A5AB4722119C2700628854 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = SOURCE_ROOT; };
@@ -109,10 +116,14 @@
 				42B7A629215CB82E00A72A63 /* AppDelegate.swift */,
 				42B7A630215CB82F00A72A63 /* Assets.xcassets */,
 				42FEDE1C215CCF73008420BF /* Main.storyboard */,
+				422179972214137A00737893 /* Motion.h */,
+				422179982214137A00737893 /* Motion.m */,
+				4221799A2214139A00737893 /* Fruit.mlmodel */,
 				42D0DE45215CD52800F1AB45 /* EntryList.swift */,
 				4288709C215D4D9D0028EC52 /* MapPage.swift */,
 				42D0DE4A215CE95F00F1AB45 /* EntryCell.swift */,
 				42D0DED3215CF91300F1AB45 /* EntryPage.swift */,
+				422179952214131F00737893 /* ScanPage.swift */,
 				D008B39E215D1B3A00D13B0E /* EntryNew.swift */,
 				D01D24A42211AE8300C920D7 /* LoginController.swift */,
 				42D0DE48215CE1B200F1AB45 /* TravelBrosSQL.swift */,
@@ -224,10 +235,13 @@
 				42D0DE49215CE1B200F1AB45 /* TravelBrosSQL.swift in Sources */,
 				42D0DECE215CF00500F1AB45 /* FMDatabaseAdditions.m in Sources */,
 				D01D24A52211AE8300C920D7 /* LoginController.swift in Sources */,
+				422179992214137B00737893 /* Motion.m in Sources */,
+				422179962214131F00737893 /* ScanPage.swift in Sources */,
 				42D0DED4215CF91300F1AB45 /* EntryPage.swift in Sources */,
 				42D0DECF215CF00500F1AB45 /* FMResultSet.m in Sources */,
 				D008B39F215D1B3A00D13B0E /* EntryNew.swift in Sources */,
 				42D0DECD215CF00500F1AB45 /* FMDatabaseQueue.m in Sources */,
+				4221799B2214139A00737893 /* Fruit.mlmodel in Sources */,
 				D0F6BC6E2212CA780092A20A /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -333,6 +333,45 @@
             </objects>
             <point key="canvasLocation" x="884" y="25.637181409295355"/>
         </scene>
+        <!--Scan Page-->
+        <scene sceneID="YcP-Pq-5w0">
+            <objects>
+                <viewController id="KUd-MM-RIo" customClass="ScanPage" customModule="TravelBros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvr-Ev-QrP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INR-p0-gKm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-z3-Iq6">
+                                <rect key="frame" x="36" y="233" width="303" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.42789622869999999" green="1" blue="0.56458524710000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8g-lC-Rms">
+                                <rect key="frame" x="123" y="432" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ARG-lK-1lG"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="INR-p0-gKm" id="JYC-XY-Moy"/>
+                        <outlet property="metaLabel" destination="n8g-lC-Rms" id="qbw-wB-yDe"/>
+                        <outlet property="scanView" destination="5fh-z3-Iq6" id="IfB-fP-ksb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyL-cI-R44" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426.39999999999998" y="698.5007496251875"/>
+        </scene>
         <!--Entry Page-->
         <scene sceneID="vtj-qE-0gi">
             <objects>
@@ -386,6 +425,15 @@
                                 <state key="normal" title="Save Image"/>
                                 <connections>
                                     <action selector="exportImage" destination="98g-V7-eS1" eventType="touchUpInside" id="XXU-P5-bjc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlT-yt-BLb">
+                                <rect key="frame" x="22" y="620" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <segue destination="KUd-MM-RIo" kind="show" identifier="ShowScanner" id="0By-zZ-QPC"/>
                                 </connections>
                             </button>
                         </subviews>
