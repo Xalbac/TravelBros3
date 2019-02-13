@@ -105,14 +105,16 @@ class TravelBrosSQL {
         }
     }
     
-    func editEntry(){
+    /*func editEntry(entryId:String,entryDate:String,entryAdrs:String,entryEntry:String,entryImg:UIImage?){
         let database = FMDatabase(path: dbPath)
         if database.open(){
             do{
                 print("Uhhh something wittty")
+                let entrySet = try database.executeUpdate("UPDATE entries SET date=?,img=?,address=?,entry=? WHERE id=?", values: [entryDate,entryImg,entryAdrs,entryEntry,entryId])
+                
             }
         }
-    }
+    }*/
     
     //Laddar upp till data basen
     func uploadData() {
