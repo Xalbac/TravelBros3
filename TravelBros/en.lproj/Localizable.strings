@@ -11,3 +11,5 @@
 "loginPassword" = "Password";
 "loginCancel" = "Cancel";
 "loginAccept" = "Accept";
+"deleteButton" = "Delete";
+"editButton" = "Edit";

@@ -11,3 +11,5 @@
 "loginPassword" = "Lösenord";
 "loginCancel" = "Avbyrt";
 "loginAccept" = "Bekräfta";
+"deleteButton" = "Radera";
+"editButton" = "Redigera";

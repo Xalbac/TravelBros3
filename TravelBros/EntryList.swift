@@ -94,6 +94,14 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
                 }
             }
         }
+            if segue.identifier == "toEntryEdit"{
+                if let entryEdit = segue.destination as? EntryEdit{
+                    if let indx2 = sender as? Int {
+                        var editEntry = entryData.entryArray[indx2]
+                        entryEdit.entryID = editEntry.id
+                    }
+                }
+            }
     }
     
     // Override to support editing the table view.
@@ -123,15 +131,19 @@ class EntryList: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let editButton = UITableViewRowAction(style: .normal, title: "Edit"){(rowAction,indexPath)in
+        let editButton = UITableViewRowAction(style: .normal, title: NSLocalizedString("editButton", comment: "EDIT BUTTON")){(rowAction,indexPath)in
             print("EDIT")
             let row = indexPath.row
+            print("ROW")
+            print(row)
             let entryCell2 = self.entryData.entryArray[row]
+            print("entrycell")
+            print(entryCell2)
             self.performSegue(withIdentifier: "toEntryEdit", sender: row)
         }
         editButton.backgroundColor = UIColor.green
 
-        let deleteButton = UITableViewRowAction(style: .normal, title: "Delete"){(rowAction,indexPath)in
+        let deleteButton = UITableViewRowAction(style: .normal, title: NSLocalizedString("deleteButton", comment: "Delet button")){(rowAction,indexPath)in
             print("DELETE")
             let row = indexPath.row
             print("row: ")

@@ -1,6 +1,9 @@
 
+/* Class = "UIButton"; normalTitle = "EDIT"; ObjectID = "18l-XW-W2i"; */
+"18l-XW-W2i.normalTitle" = "REDIGERA";
+
 /* Class = "UITextField"; placeholder = "Idag tog jag min pappa och vi hardbassade hela dagen"; ObjectID = "2ib-h3-ij9"; */
-"2ib-h3-ij9.placeholder" = "Idag tog jag min pappa och vi hardbassade hela dagen";
+"2ib-h3-ij9.placeholder" = "Idag tog jag bilder av apelsiner.";
 
 /* Class = "UIButton"; normalTitle = "ADD"; ObjectID = "3Tb-J3-exy"; */
 "3Tb-J3-exy.normalTitle" = "LÄGG TILL";
@@ -17,6 +20,9 @@
 /* Class = "UITextField"; placeholder = "DD/MM"; ObjectID = "FFc-Jf-qkn"; */
 "FFc-Jf-qkn.placeholder" = "DD/MM";
 
+/* Class = "UITextField"; placeholder = "Drożyska 47"; ObjectID = "IK6-b8-fGI"; */
+"IK6-b8-fGI.placeholder" = "Drożyska 47";
+
 /* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "ILQ-8O-LeQ"; */
 "ILQ-8O-LeQ.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
 
@@ -26,14 +32,20 @@
 /* Class = "UIButton"; normalTitle = "Gallery"; ObjectID = "MWg-ps-RMd"; */
 "MWg-ps-RMd.normalTitle" = "Galleri";
 
+/* Class = "UIButton"; normalTitle = "Camera"; ObjectID = "WpA-5H-cSU"; */
+"WpA-5H-cSU.normalTitle" = "Kamera";
+
 /* Class = "UIBarButtonItem"; title = "New entry"; ObjectID = "XIE-ZU-H3U"; */
-"XIE-ZU-H3U.title" = "Ny tillägg";
+"XIE-ZU-H3U.title" = "Ny Tillägg";
 
 /* Class = "UITextField"; placeholder = "Drożyska 47"; ObjectID = "YrQ-zc-heV"; */
 "YrQ-zc-heV.placeholder" = "Drożyska 47";
 
 /* Class = "UILabel"; text = "DATE"; ObjectID = "bEW-8y-MYk"; */
 "bEW-8y-MYk.text" = "DATUM";
+
+/* Class = "UITextField"; placeholder = "DD/MM"; ObjectID = "c8T-WF-5zY"; */
+"c8T-WF-5zY.placeholder" = "DD/MM";
 
 /* Class = "UILabel"; text = "DATE"; ObjectID = "dO1-Kc-ULM"; */
 "dO1-Kc-ULM.text" = "DATUM";
@@ -44,8 +56,29 @@
 /* Class = "UIButton"; normalTitle = "Camera"; ObjectID = "jZp-Il-2uF"; */
 "jZp-Il-2uF.normalTitle" = "Kamera";
 
+/* Class = "UILabel"; text = "ABOUT DAY"; ObjectID = "jfo-Xr-Nuf"; */
+"jfo-Xr-Nuf.text" = "OM DAGEN";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "n8g-lC-Rms"; */
+"n8g-lC-Rms.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Gallery"; ObjectID = "neI-kR-mIH"; */
+"neI-kR-mIH.normalTitle" = "Galleri";
+
+/* Class = "UILabel"; text = "DATE"; ObjectID = "obn-cs-bLq"; */
+"obn-cs-bLq.text" = "DATUM";
+
 /* Class = "UIButton"; normalTitle = "Save Image"; ObjectID = "odC-PM-Fjb"; */
-"odC-PM-Fjb.normalTitle" = "Spara bild";
+"odC-PM-Fjb.normalTitle" = "Spara Bild";
+
+/* Class = "UITextField"; placeholder = "Idag tog jag min pappa och vi hardbassade hela dagen"; ObjectID = "oqL-AD-cCK"; */
+"oqL-AD-cCK.placeholder" = "Idag tog jag bilder av apelsiner.";
 
 /* Class = "UILabel"; text = "ADRESSS"; ObjectID = "r9f-zV-2dA"; */
-"r9f-zV-2dA.text" = "ADRESS";
+"r9f-zV-2dA.text" = "ADRESSS";
+
+/* Class = "UILabel"; text = "ADDRESS"; ObjectID = "vHf-E8-f2c"; */
+"vHf-E8-f2c.text" = "ADRESS";
+
+/* Class = "UIButton"; normalTitle = "Scan"; ObjectID = "wlT-yt-BLb"; */
+"wlT-yt-BLb.normalTitle" = "Skanna";
